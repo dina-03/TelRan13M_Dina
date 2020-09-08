@@ -1,7 +1,7 @@
 package de.telran.date;
 
 public class Auto {
-   private String autoMake;
+   private String carBrand;
    private int year;
    private String bodyColor;
    private String body;
@@ -12,26 +12,21 @@ public class Auto {
 
    public Auto(){};
 
-   public Auto(String autoMake, int year, String bodyColor){
-       this.autoMake = autoMake;
+   public Auto(String carBrand, int year, String body, String model, int nrOfDoors, String countryVersion){
+       this.carBrand = carBrand;
        this.year = year;
-       this.bodyColor = bodyColor;
+       this.body = body;
+       this.model = model;
+       this.nrOfDoors = nrOfDoors;
+       this.countryVersion = countryVersion;
    }
 
-    public String getAutoMake() {
-        return autoMake;
-    }
-
-    public void setAutoMake(String autoMake) {
-        this.autoMake = autoMake;
+    public String getCarBrand() {
+        return carBrand;
     }
 
     public int getYear() {
         return year;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
     }
 
     public String getBodyColor() {
@@ -46,32 +41,16 @@ public class Auto {
         return body;
     }
 
-    public void setBody(String body) {
-        this.body = body;
-    }
-
     public String getModel() {
         return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public int getNrOfDoors() {
         return nrOfDoors;
     }
 
-    public void setNrOfDoors(int nrOfDoors) {
-        this.nrOfDoors = nrOfDoors;
-    }
-
     public String getCountryVersion() {
         return countryVersion;
-    }
-
-    public void setCountryVersion(String countryVersion) {
-        this.countryVersion = countryVersion;
     }
 
     public double getPrice() {
@@ -84,15 +63,14 @@ public class Auto {
 
     @Override
     public String toString() {
-        return "Auto:" +
-                "autoMake: " + autoMake +
-                ", year: " + year +
-                ", bodyColor: " + bodyColor +
-                ", body: " + body +
-                ", model: " + model +
-                ", nrOfDoors: " + nrOfDoors +
-                ", countryVersion: " + countryVersion +
-                ", price: " + price + " €" +
+        return "Auto:" + carBrand +
+                ", year:" + year +
+                ", bodyColor:" + bodyColor +
+                ", body:" + body +
+                ", model:" + model +
+                ", nrOfDoors:" + nrOfDoors +
+                ", countryVersion:" + countryVersion +
+                ", price:" + price + " €" +
                 '.';
     }
 }
