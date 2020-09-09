@@ -15,5 +15,6 @@ public class DocApplication {
         System.out.println(dog1.isDogStatus());
         dog1.dogRun();
         dog1.display();
+        dog.dogRun();
     }
 }
