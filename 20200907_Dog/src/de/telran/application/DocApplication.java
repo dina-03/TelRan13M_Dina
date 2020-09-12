@@ -12,6 +12,7 @@ public class DocApplication {
         System.out.println(dog);
         dog.dogVoice();
         Dog.someMethod();*/
+        //Вот это даааа!!!!!
         System.out.println(dog1.isDogStatus());
         dog1.dogRun();
         dog1.display();
