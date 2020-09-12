@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i < input.length; i++) {
             sum += input[i];
             sumI += (i + 1);
-        }
+        }//hello!
         sumI += input.length + 1;
         return sumI - sum;
     }
